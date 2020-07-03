@@ -1,0 +1,43 @@
+.scan-tracking-container {
+  font-family: Helvetica;
+  .tracking-container {
+    .table-header {
+      background: gray;
+      color: white;
+      margin-bottom: initial;
+      .badge {
+        margin-left: 5px;
+      }
+    }
+    .table-content {
+      border-radius: 0.25rem;
+      border-left: 1px solid rgba(128, 128, 128, 0.5);
+      border-right: 1px solid rgba(128, 128, 128, 0.5);
+      border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+      padding: 15px;
+      .tracking-number {
+        display: inline-flex;
+        letter-spacing: 1px;
+        width: 70%;
+      }
+      .recieve-date,
+      .recieve-time {
+        font-size: 14px;
+        display: inline-flex;
+        width: 30%;
+        justify-content: flex-end;
+        &.none {
+          display: none;
+        }
+      }
+      .status {
+        color: rgba(128, 128, 128, 0.8);
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+    .input-group {
+      margin-bottom: 15px;
+    }
+  }
+}
